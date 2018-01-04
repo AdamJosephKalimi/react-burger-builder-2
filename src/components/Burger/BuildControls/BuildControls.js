@@ -23,7 +23,16 @@ const buildControls = (props) => (
               removed={() => props.ingredientRemoved(ctrl.type)}
               disabled={props.disabled[ctrl.type]}/>
         ))}
+
+
+        <button className={classes.OrderButton}
+        disabled={!props.purchasable}>ORDER NOW</button>
     </div>
   );
 
 export default buildControls;
+
+
+
+// The logic for the ODER NOW button will be in the
+// BurgerBuilder bc that's where the state is managed
