@@ -18,7 +18,9 @@ const buildControls = (props) => (
               // this line is sending the type from the array above
               // over to the addIngredientHandler, where it is
               // entered as an argument.
-              added={() => props.ingredientAdded(ctrl.type)}/>
+              added={() => props.ingredientAdded(ctrl.type)}
+              removed={() => props.ingredientRemoved(ctrl.type)}
+              disabled={props.disabled[ctrl.type]}/>
         ))}
     </div>
   );
