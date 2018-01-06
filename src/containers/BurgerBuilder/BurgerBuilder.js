@@ -111,6 +111,8 @@ class BurgerBuilder extends Component {
             disabledInfo[key] = disabledInfo[key] <= 0
         }
         return (
+          // The OrderSummary should only rerender when the Modal is
+          // showing. Not at any other time.
               <Aux>
                   <Modal show={this.state.purchasing} modalClosed={this.purchaseCancelHandler}>
                       <OrderSummary
