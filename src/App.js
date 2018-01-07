@@ -17,3 +17,4 @@ class App extends Component {
 export default App;
 
 // This App.js file is the ROOT COMPONENT
+// Second commit
