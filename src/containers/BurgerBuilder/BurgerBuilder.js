@@ -5,8 +5,10 @@ import Burger from '../../components/Burger/Burger';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
 import Modal from '../../components/UI/Modal/Modal';
 import OrderSummary from '../..//components/Burger/OrderSummary/OrderSummary';
-import axios from '../../axios-orders';
 import Spinner from '../../components/UI/Spinner/Spinner';
+import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
+import axios from '../../axios-orders';
+
 
 // Name constants you want to use as global constants
 // using ALLCAPS
@@ -170,4 +172,9 @@ class BurgerBuilder extends Component {
     }
 }
 
-export default BurgerBuilder;
+// axios needs to be the second argument bc withErrorHandler
+// takes it as the second argument in its own component.
+// We can use this higher order component to display an
+// error message for any component that uses axios.
+
+export default withErrorHandler(BurgerBuilder, axios);
