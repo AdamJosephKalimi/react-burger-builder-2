@@ -113,36 +113,36 @@ class BurgerBuilder extends Component {
     }
 
     purchaseContinueHandler = () => {
-      this.setState( { loading: true } );
-      //alert('You are proceeding!');
-      const order = {
-          ingredients: this.state.ingredients,
-          // On production, calculate this on the server
-          // so users cannot manipulate it before it's
-          // sent to the server.
-          price: this.state.totalPrice,
-          customer: {
-              name: 'Adam Kalibaba',
-              address: {
-                street: '1213 Main Lane',
-                zipCode: '11213',
-                country: 'China'
-              },
-              email: 'Test@testease.com'
-          },
-          deliverMethod: 'fastest'
-      }
+    //   this.setState( { loading: true } );
+    //   //alert('You are proceeding!');
+    //   const order = {
+    //       ingredients: this.state.ingredients,
+    //       // On production, calculate this on the server
+    //       // so users cannot manipulate it before it's
+    //       // sent to the server.
+    //       price: this.state.totalPrice,
+    //       customer: {
+    //           name: 'Adam Kalibaba',
+    //           address: {
+    //             street: '1213 Main Lane',
+    //             zipCode: '11213',
+    //             country: 'China'
+    //           },
+    //           email: 'Test@testease.com'
+    //       },
+    //       deliverMethod: 'fastest'
+    //   }
 
-      // orders will be the name of the node created
-      // in firebase
-      axios.post('/orders.json', order)
-        .then(response => {
-          this.setState({ loading: false, purchasing: false });
-        })
-        .catch(error => {
-          this.setState({ loading: false, purchasing: false });
-        });
-
+    //   // orders will be the name of the node created
+    //   // in firebase
+    //   axios.post('/orders.json', order)
+    //     .then(response => {
+    //       this.setState({ loading: false, purchasing: false });
+    //     })
+    //     .catch(error => {
+    //       this.setState({ loading: false, purchasing: false });
+    //     });
+          this.props.history.push('/checkout');
     }
     render () {
         const disabledInfo = {
