@@ -87,6 +87,22 @@
     background: linear-gradient(#7f3608, #702e05);
     margin: 2% auto;
     border-radius: 15px;
+    color: white;
+}
+
+.Salmon {
+    width: 80%;
+    height: 8%;
+    margin: 2% auto;
+    background: linear-gradient(#FF8671, #A83307);
+    border-radius: 20px;
+}
+.Chicken {
+    width: 80%;
+    height: 8%;
+    margin: 2% auto;
+    background: linear-gradient(#FFF2CF, #AA5323);
+    border-radius: 20px;
 }
 
 .Cheese {
@@ -95,6 +111,7 @@
     margin: 2% auto;
     background: linear-gradient(#f4d004, #d6bb22);
     border-radius: 20px;
+    font-size: 10px;
 }
 
 .Salad {
@@ -110,4 +127,76 @@
     height: 3%;
     background: linear-gradient(#bf3813, #c45e38);
     margin: 2% auto;
+    font-size: 9px;
 }
+
+.Tomato {
+    width: 70%;
+    height: 7%;
+    margin: 2% auto;
+    background: linear-gradient(#DC2216, #DA2014);
+    border-radius: 20px;
+}
+
+.Egg {
+    width: 85%;
+    height: 7%;
+    margin: 2% auto;
+    background: linear-gradient(#F0E2AC, #F9E772);
+    border-radius: 20px;
+}
+
+.Relish {
+    width: 80%;
+    height: 3%;
+    margin: 2% auto;
+    background: linear-gradient(#BCBE2F, #91ce50);
+    border-radius: 20px;
+    font-size: 9px;
+}
+
+.Avocado {
+    width: 70%;
+    height: 7%;
+    margin: 2% auto;
+    background: linear-gradient(#E7DE8F, #A3C034);
+    border-radius: 20px;
+}
+
+
+.Ketchup {
+    width: 80%;
+    height: 3%;
+    margin: 2% auto;
+    background: linear-gradient(#DC2216, #DA2014);
+    border-radius: 20px;
+    font-size: 9px;
+}
+
+.Mustard {
+    width: 80%;
+    height: 3%;
+    margin: 2% auto;
+    background: linear-gradient(#FDCA01, #E4B00F);
+    border-radius: 20px;
+    font-size: 9px;
+}
+
+.Onion {
+    width: 70%;
+    height: 7%;
+    margin: 2% auto;
+    background: linear-gradient(#F1DCF0, #BE4E9C);
+    border-radius: 20px;
+}
+
+.Mayo {
+    width: 80%;
+    height: 3%;
+    margin: 2% auto;
+    background: linear-gradient(#F1CB9E, #F2DBC2);
+    border-radius: 20px;
+    font-size: 9px;
+}
+
+
